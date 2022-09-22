@@ -1,0 +1,41 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); */
+
+:root{
+    --background-color : #f5e050;
+}
+
+body{
+    background-color: var(--background-color);
+    margin: auto;
+    padding:  0rem 5rem 5rem 5rem;
+    text-align: center;
+    font-family: 'Secular One',Impact,  'Arial Narrow Bold', sans-serif;
+}
+
+.header{
+
+}
+
+h1{
+    font-size: 5em;
+    word-spacing: 1rem;
+    letter-spacing: .5rem;
+    
+}
+
+.main-section{
+    margin: auto;
+    width: 90%;
+    padding: 10%;
+}
+
+.text-area{
+    width: 20vw;
+    height: 10vh;
+    margin: 3rem 1.5 rem;
+}
+
+#btn-input{
+    margin: 0rem 4rem;
+    
+}

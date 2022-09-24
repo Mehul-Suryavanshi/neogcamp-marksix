@@ -2,7 +2,8 @@ var btn = document.querySelector("#btn-input");
 var inputTextArea = document.querySelector("#input-textarea");
 var outputTextArea = document.querySelector("#output-textarea");
 var apiEndPoint =
-  "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=";
+"https://api.funtranslations.com/translate/minion.json?text=";
+// "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=";
 var requestString = "";
 
 btn.addEventListener("click", () => {
@@ -13,7 +14,9 @@ btn.addEventListener("click", () => {
 
 function callTranslateApi() {
   fetch(requestString)
-    .then(response => response.json())
+    .then(response => {
+      return response.json();
+    })
     .then((jsonParse) => {
       let translatedTest = jsonParse.contents.translated;
       outputTextArea.innerHTML = translatedTest;

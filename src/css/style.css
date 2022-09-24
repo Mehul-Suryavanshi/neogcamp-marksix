@@ -1,41 +1,77 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); */
-
-:root{
-    --background-color : #f5e050;
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--background-color);
-    margin: auto;
-    padding:  0rem 5rem 5rem 5rem;
-    text-align: center;
-    font-family: 'Secular One',Impact,  'Arial Narrow Bold', sans-serif;
+:root {
+  --background-color: #f5e050;
+  --secondary-color : #115695;
 }
 
-.header{
-
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  /* text-align: center; */
+  font-family: "Kalam", cursive;
 }
 
-h1{
-    font-size: 5em;
-    word-spacing: 1rem;
-    letter-spacing: .5rem;
-    
+.header {
+  text-align: center;
+  margin-bottom: 7vw;
 }
 
-.main-section{
-    margin: auto;
-    width: 90%;
-    padding: 10%;
+h1 {
+  font-size: 4vw;
+  word-spacing: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+.header p{
+    font-size: 1vw;
+}
+section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0 5vw;
+  margin: 5rem 0;
 }
 
-.text-area{
-    width: 20vw;
-    height: 10vh;
-    margin: 3rem 1.5 rem;
+.text-area {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 1rem 3rem 3rem 3rem;
+
+  border: solid 3px;
+  border-radius: 3rem;
+  height: 30vh;
 }
 
-#btn-input{
-    margin: 0rem 4rem;
-    
+#btn-input {
+  margin: auto;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 3rem;
+  border: solid 3px;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+    font-size: 8vw;
+  }
+  .header p{
+    font-size: 5vw;
+  }
+  section {
+    grid-template-columns: auto;
+    font-size: 1rem;
+  }
+  #btn-input {
+    margin: 2rem;
+  }
+
+  
+  
 }
